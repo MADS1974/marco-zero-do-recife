@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Marco Zero do Recife</title>
+    <link rel="icon" href="img/favicon/marco zero.ico" type="image/mads">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body class="pagina-1">
+    <header id="topo">
+        <!-- <img src="img/logo.png" alt="Logo do Marco Zero" class="logo">  --> 
+        <h1>MARCO ZERO DO RECIFE</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#sobre">Sobre</a>
+                </li>
+                <li>
+                    <a href="#historia">História</a>
+                </li>
+                <li>
+                    <a href="#eventos">Eventos</a>
+                </li>
+                <li>
+                    <a href="rec antigo pontos turisticos.html">Pontos Turísticos</a>
+                </li>                
+                <li>
+                    <a href="#localização">Localização</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <h2>Sobre o Marco Zero</h2>
+            <p>O Marco Zero é um dos pontos turísticos mais icônicos da cidade do Recife, Pernambuco. Localizado no bairro do Recife Antigo, às margens do Rio Capibaribe, é o marco inicial para a contagem das distâncias nas estradas que cortam o estado de Pernambuco. Seu nome é, na verdade, Praça Rio Branco e fica ao lado do Porto de Pernambuco.</p>
+            <img src="img/sobre o marco zero.jpeg" alt="sobre o marco zero">
+            <button class="scroll-to-top-button">Voltar</button>
+
+        </section>
+
+        <section id="historia">
+            <h3>História</h3>
+            <p>O Marco Zero no Recife Antigo é o lugar de referência onde a cidade nasceu e todas as medidas oficiais de distâncias rodoviárias usam como ponto de partida. O local é famoso por seu grande relógio, esculturas, e pelo piso de cerâmica que representa a rosa dos ventos, marcando o início da cidade. Além disso, a popularização do nome Marco Zero aconteceu desde 1938, devido à instalação do símbolo geográfico na parte central da praça. Ele foi uma doação do Automóvel Clube de Pernambuco.</p>
+            <a href="https://www.facebook.com/1.marco.zero.recife/" target="_blank">
+                <img src="img/ponto inicial marco zero.jpg" alt="história do marco zero">
+            </a>
+            <button class="scroll-to-top-button">Voltar</button>
+        </section>
+
+        <section id="eventos">
+            <h3>Eventos</h3>
+            <p>A praça tem o nome original de Praça Barão do Rio Branco, todavia ficou conhecida como Praça do Marco Zero pelo fato de que nela encontra-se o quilômetro zero das estradas de Pernambuco. É formada por um marco de cor vermelha doado pelo Clube do Automóvel. Na lateral da praça encontra-se a estátua do Barão do Rio Branco em bronze, com 2,80m de altura, do escultor Felix Charpentier. Já no centro pode ser vista a rosa dos ventos do pintor Cícero Dias. Nos períodos de momo a praça funciona como quartel general do carnaval multicultural do Recife. <a href="https://visit.recife.br/o-que-fazer/atracoes/parques-e-pracas/praca-do-marco-zero" target="_blank">Saiba mais</a></p>
+            <a href="https://www.facebook.com/1.marco.zero.recife/" target="_blank">
+                <img src="img/recife antigo.jpg" alt="eventos marco zero">
+            </a>
+            <button class="scroll-to-top-button">Voltar</button>
+        </section>
+
+        <section id="localização">
+            <h3>Mapa</h3>
+            <div style="display: flex; justify-content: center;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.113408971225!2d-34.872891685244786!3d-8.059208994192637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1ffb4b9945b1%3A0x6662e3e880e2a3d4!2sPra%C3%A7a%20Rio%20Branco%2C%20Recife%20-%20PE%2C%2050000-360!5e0!3m2!1spt-BR!2sbr!4v1637683780623!5m2!1spt-BR!2sbr" width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>            
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer-text">Site criado por <a href="https://github.com/MADS1974" target="_blank"><span style="color: #bdbd22;">MADS1974</span></a><br>&copy; 2023 MADS1974. Todos os direitos reservados.</p>
+    </footer>
+    
+
+    <script>
+// Esse código JavaScript realiza algumas funcionalidades relacionadas ao botão "Voltar"
+// Define uma função chamada scrollToTop que é responsável por rolar suavemente de volta ao topo da página.
+// Usa a função window.scrollTo para animar o movimento de rolagem até o topo (top: 0) com um comportamento suave (behavior: 'smooth').
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+// Definindo um evento de rolagem (onscroll) no objeto window.
+// Sempre que a página é rolada, a função anônima associada é executada.
+// (document.body.scrollTop ou document.documentElement.scrollTop) Essa função verifica se a posição de rolagem vertical do documento é maior do que 20 pixels.
+// Se for, o botão de voltar é exibido (style.display = 'block'); caso contrário, o botão é ocultado (style.display = 'none').
+// Isso cria um efeito de mostrar ou ocultar o botão conforme o usuário rola a página.
+
+window.onscroll = function () {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.querySelector('.scroll-to-top-button').style.display = 'block';
+    } else {
+        document.querySelector('.scroll-to-top-button').style.display = 'none';
+    }
+}
+
+// Adicionando um ouvinte de eventos ao botão de voltar.
+// Quando o botão é clicado, a função scrollToTop é chamada, rolando suavemente a página de volta ao topo.
+// No HTML, o botão de voltar é um elemento com a classe .scroll-to-top-button.
+
+document.querySelector('.scroll-to-top-button').addEventListener('click', scrollToTop);
+
+    </script>
+</body>
+</html>

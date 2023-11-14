@@ -1,0 +1,233 @@
+
+/* Estilos comuns para ambas as páginas */
+#topo {
+    /* Meus estilos para o banner inicial */
+}
+
+.scroll-to-top-button {
+    /* Meus estilos para o botão de voltar */
+}
+
+/* Estilos específicos para a Página 1 */
+.pagina-1 #topo {
+    /* Adiciona estilos específicos para o banner inicial na Página 1, se necessário */
+}
+
+.pagina-1 .scroll-to-top-button {
+    /* Adiciona estilos específicos para o botão de voltar na Página 1, se necessário */
+}
+
+/* Estilos específicos para a Página 2 */
+.pagina-2 #topo {
+    display: none; /* Oculta o banner inicial na Página 2 */
+}
+
+/* Adiciona estilos específicos para a logo */
+.logo {
+    max-width: 100px; /* Ajuste conforme necessário */
+    border-radius: 50%;
+    margin-bottom: 20px; /* Aumentei a margem para 20px */
+    transition: transform 0.3s; /* Adiciona uma transição suave */
+}
+
+/* Adiciona a transformação apenas no hover */
+.logo:hover {
+    transform: scale(1.2); /* Ajuste conforme necessário */
+}
+
+/* Adiciona estilos específicos para o título "MARCO ZERO DO RECIFE" */
+#topo h1 {
+    font-size: 60px;
+    margin-bottom: 20px; /* Aumentei a margem para 20px */
+    transition: transform 0.3s; /* Adiciona uma transição suave */
+}
+
+/* Adiciona a transformação apenas no hover */
+#topo h1:hover {
+    transform: scale(1.2); /* Ajuste conforme necessário */
+}
+
+/* Adicione estilos específicos para os itens do menu */
+nav ul li {
+    transition: transform 0.3s; /* Adiciona uma transição suave */
+}
+
+/* Adiciona a transformação apenas no hover */
+nav ul li:hover {
+    transform: scale(1.2); /* Ajuste conforme necessário */
+}
+
+/* Adiciona efeito de zoom nas imagens das seções */
+section img {
+    transition: transform 0.3s ease-in-out;
+}
+
+section img:hover {
+    transform: scale(1.05);
+}
+
+/* Desativa o efeito de zoom nas imagens das seções para a Página 2 */
+.pagina-2 section img {
+    transition: none;
+}
+
+.pagina-2 section img:hover {
+    transform: none;
+}
+.scroll-to-top-button {
+    display: block;
+    padding: 10px 20px;
+    background-color: rgb(153, 153, 107);
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.scroll-to-top-button:hover {
+    background-color: #5e5e40;
+    text-decoration: underline;
+}
+
+
+#topo h1 {
+    font-size: 60px;
+}
+
+nav ul li a {
+    font-size: 22px;
+}
+
+#topo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('img/recife\ antigo\ marco\ zero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center bottom;
+}
+
+header {
+    background-image: url('img/marco-zero-03.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center bottom;
+    padding: 280px;
+    color: #fff;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+nav {
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+h2, h3, h4 {
+    color: #5e5e40;
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid rgba(94, 94, 64, 0.8); /* Ajuste a largura e a cor conforme necessário */
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+footer {
+    background-image: url('img/recife.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center bottom;
+    padding: 160px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+}
+
+#sobre img {
+    border-radius: 10px;
+}
+
+.footer-text {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-text a {
+    color: #fff;
+}
+
+.footer-text a:nth-child(1),
+.footer-text a:nth-child(2) {
+    color: #bdbd22;
+}
+
+/* Adiciona este estilo para os botões "Voltar" */
+.scroll-to-top-button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: rgb(153, 153, 107);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.scroll-to-top-button:hover {
+    background-color: #5e5e40;
+}
